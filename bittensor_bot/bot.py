@@ -153,5 +153,5 @@ if __name__ == "__main__":
     intents.message_content = True
     
     bot = BTBot(intents)
-    bot.run("MTIwMjY4OTQ5ODEyMzczMTAyNA.G-nHrg.vo-S2KGWFBfylOwr5qNrCiEWLDa3wIvB0g788Y")
+    bot.run("TOKEN HERE")
     #bot.loop.create_task(bot.check_hyperparameters())
