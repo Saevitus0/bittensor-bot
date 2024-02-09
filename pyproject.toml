@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bittensor-bot"
+version = "0.1.0"
+description = ""
+authors = ["Saevitus0 <john@opentensor.dev>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+disnake = "^2.9.1"
+bittensor = "^6.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
