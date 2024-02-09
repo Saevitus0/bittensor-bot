@@ -104,13 +104,13 @@ class BTBot(commands.InteractionBot):
                 
                 await channel.send(embed=embed)
                 
-
+    # havent tested this properly yet
     @commands.slash_command(name="list_hyperparams", description="Lists the current hyperparameters")
     async def cmd(self, ctx: disnake.ApplicationCommandInteraction):
         #hyperparameters = bittensor.subtensor.get_subnet_hyperparameters()
         #print(list(self.subnet_channel_mapping.keys())[list(self.subnet_channel_mapping.values()).index(inter.channel.id)])
         
-        await ctx.response.send_message(f'Current hyperparameters: {list(self.subnet_channel_mapping.keys())[list(self.subnet_channel_mapping.values()).index(inter.channel.id)]}')
+        await ctx.response.send_message(f'Current hyperparameters: {list(self.subnet_channel_mapping.keys())[list(self.subnet_channel_mapping.values()).index(ctx.channel.id)]}')
 
 
 if __name__ == "__main__":
